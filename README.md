@@ -49,11 +49,7 @@ For keyboard users, pressing escape or validating the default close button will 
 </tr>
 </tbody>
 </table>
-<p> The "open" parameter is the state allowing to know if the component should be mounted or not</p>
-<p> The "onClose" parameter is a function you should use when closing the modal. By default it will be called when you click the default quit button or outside of the modal.
-For keyboard users, pressing escape or validating the default close button will trigger this function. For any non default close component, you may want to add a custom close function </p>
-<p> The optional "withDefaultClose" parameter allows you to remove the original quit button, if you would like to provide your own component. </p>
-<p> The optional "wrapperStyle" parameter allows you to override the default modal style if you wish to change it, below is the default css applied </p>
+
 <pre>
   padding: 0 30px;
   background-color: white;
@@ -75,7 +71,7 @@ export function TestModal(){
 
   return (
     <>
-      <button onClick={() => setOpenModal(true)}>OpenModal</button>
+      <button onClick={() `=`> setOpenModal(true)}>OpenModal</button>
 
       <Modal open={`openModal`} onClose={`setOpenModal`}>
         <div>
@@ -99,7 +95,7 @@ export function TestModal(){
 
   return (
     <>
-      <button onClick={() => setOpenModal(true)}>OpenModal</button>
+      <button onClick={() `=`> setOpenModal(true)}>OpenModal</button>
 
       <Modal open={openModal} onClose={setOpenModal} withDefaultClose={false} wrapperStyle={{backgroundColor: `black`, color: `white`}}>
           <div>
