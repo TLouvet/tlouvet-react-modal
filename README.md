@@ -95,7 +95,7 @@ export function TestModal(){
 
   return (
     <>
-      <button onClick={() `=`> setOpenModal(true)}>OpenModal</button>
+      <button onClick=`{() `=> setOpenModal(true)}>OpenModal</button>
 
       <Modal open={openModal} onClose={setOpenModal} withDefaultClose={false} wrapperStyle={{backgroundColor: `black`, color: `white`}}>
           <div>
