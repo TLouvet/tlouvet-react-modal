@@ -1,7 +1,7 @@
 <h1>TLouvet - Basic React Modal</h1>
 
 <p>This package allows you to create a Modal that
-will trap focus</p>
+will trap focus. The modal component acts as a default container that you fill with your own components.</p>
 
 <h2> Installation and Import </h2>
 <p>Add with npm : <code> npm install tlouvet-react-modal </code></p>
@@ -73,7 +73,7 @@ export function TestModal(){
     <>
       <button onClick={() => setOpenModal(true)}>OpenModal</button>
 
-      <Modal open={`openModal`} onClose={`setOpenModal`}>
+      <Modal open={openModal} onClose={setOpenModal}>
         <div>
           <p> Modal Opened </p>
           <p> Thank you for using TLouvet-react-modal </p> 
