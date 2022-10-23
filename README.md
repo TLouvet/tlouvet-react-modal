@@ -8,13 +8,10 @@ will trap focus</p>
 
 <p> Two possibles imports are possible: CJS and ESM </p>
 <p>For ESM (typical React usage): 
-  <pre>
-    <span style="color:red;">import</span> { Modal } <span style="color:red;"> from </span> "tlouvet-react-modal";
-  </pre>
+  <pre><span style="color:red">import</span> { Modal } <span style="color:red"> from </span> "tlouvet-react-modal";</pre>
 </p>
 
 <p>For CJS: 
-  <pre>
-    <span style="color:red;">const</span> Modal = <span style="color:red;">require("tlouvet-react-modal") </span>;
-  </pre>
+  <pre><span style="color:red">const</span> Modal = <span style="color:red">require("tlouvet-react-modal/cjs/index")</span>;</pre>
 </p>
+
