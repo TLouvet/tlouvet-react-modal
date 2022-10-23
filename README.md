@@ -26,7 +26,29 @@ will trap focus</p>
     <li>onClose: (state?: boolean) => void</li>
 </ul>
 
-
+<table>
+<thead>
+<tr>
+<th> Parameter </th>
+<th> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr> 
+<td>open</td> <td>Should component be displayed ? </td>
+</tr>
+<tr>
+<td>onClose</td> <td>Use when closing the modal. By default it will be called when you click the default quit button or outside of the modal.
+For keyboard users, pressing escape or validating the default close button will trigger this function. For any non default close component, you may want to add a custom close function </td>
+</tr>
+<tr>
+<td>withDefaultClose</td> <td>Allows you to remove the original quit button, if you would like to provide your own component.</td>
+</tr>
+<tr>
+<td>wrapperStyle</td> <td>allows you to override the default modal style if you wish to change it, below is the default css applied</td>
+</tr>
+</tbody>
+</table>
 <p> The "open" parameter is the state allowing to know if the component should be mounted or not</p>
 <p> The "onClose" parameter is a function you should use when closing the modal. By default it will be called when you click the default quit button or outside of the modal.
 For keyboard users, pressing escape or validating the default close button will trigger this function. For any non default close component, you may want to add a custom close function </p>
@@ -55,7 +77,7 @@ export function TestModal(){
     <>
       <button onClick={() => setOpenModal(true)}>OpenModal</button>
 
-      <Modal open={openModal} onClose={setOpenModal}>
+      <Modal open={`openModal`} onClose={`setOpenModal`}>
         <div>
           <p> Modal Opened </p>
           <p> Thank you for using TLouvet-react-modal </p> 
@@ -79,7 +101,7 @@ export function TestModal(){
     <>
       <button onClick={() => setOpenModal(true)}>OpenModal</button>
 
-      <Modal open={openModal} onClose={setOpenModal} withDefaultClose={false} wrapperStyle={{backgroundColor: 'black', color: 'white'}}>
+      <Modal open={openModal} onClose={setOpenModal} withDefaultClose={false} wrapperStyle={{backgroundColor: `black`, color: `white`}}>
           <div>
             <p> Modal Opened </p>
             <p> Thank you for using TLouvet-react-modal </p> 
