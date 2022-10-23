@@ -97,7 +97,12 @@ export function TestModal(){
     <>
       <button onClick={() => setOpenModal(true)}>OpenModal</button>
 
-      <Modal open={openModal} onClose={setOpenModal} withDefaultClose={false} wrapperStyle={{backgroundColor: `black`, color: `white`}}>
+      <Modal 
+        open={openModal} 
+        onClose={setOpenModal} 
+        withDefaultClose={false} 
+        wrapperStyle={{backgroundColor: `black`, color: `white`}}
+      >
           <div>
             <p> Modal Opened </p>
             <p> Thank you for using TLouvet-react-modal </p> 

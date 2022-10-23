@@ -10,7 +10,10 @@
     "build:esm": "tsc",
     "build": "npm run build:esm && npm run build:cjs && cp README.md lib/ && cp package.json lib/"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "modal"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
