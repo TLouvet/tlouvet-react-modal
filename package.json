@@ -1,6 +1,6 @@
 {
   "name": "tlouvet-react-modal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Basic Modal for React",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -26,5 +26,9 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TLouvet/tlouvet-react-modal.git"
   }
 }

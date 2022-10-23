@@ -7,7 +7,7 @@ type ModalProps = {
   children: JSX.Element;
   wrapperStyle?: React.CSSProperties;
   withDefaultClose?: boolean;
-  onClose: (state: boolean) => void;
+  onClose: (state?: boolean) => void;
 }
 
 export const Modal = ({ open, children, wrapperStyle, onClose, withDefaultClose = true }: ModalProps) => {
@@ -22,7 +22,7 @@ export const Modal = ({ open, children, wrapperStyle, onClose, withDefaultClose 
 
       if (e.key === "Escape") {
         e.preventDefault();
-        onClose(false);
+        onClose();
       }
 
       handleFocusTrap(e, modalRef);
