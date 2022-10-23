@@ -50,7 +50,7 @@ For keyboard users, pressing escape or validating the default close button will 
 </tbody>
 </table>
 
-<pre>
+```css
   padding: 0 30px;
   background-color: white;
   border-radius: 8px;
@@ -58,11 +58,11 @@ For keyboard users, pressing escape or validating the default close button will 
   max-width: 500px;
   position: relative;
   box-shadow: 0 0 10px #000;
-</pre>
+```
 
 <h2>Basic Usage</h2>
 
-<pre>
+```jsx
 import { useState } from "react";
 import { Modal } from "tlouvet-react-modal";
 
@@ -71,7 +71,7 @@ export function TestModal(){
 
   return (
     <>
-      <button onClick={() `=`> setOpenModal(true)}>OpenModal</button>
+      <button onClick={() => setOpenModal(true)}>OpenModal</button>
 
       <Modal open={`openModal`} onClose={`setOpenModal`}>
         <div>
@@ -82,11 +82,11 @@ export function TestModal(){
     </>
   )
 }
-</pre>
+```
 
 <h2> With optional parameters and personal close </h2>
 
-<pre>
+```jsx
 import { useState } from "react";
 import { Modal } from "tlouvet-react-modal";
 
@@ -95,7 +95,7 @@ export function TestModal(){
 
   return (
     <>
-      <button onClick=`{`() => setOpenModal(true)}>OpenModal</button>
+      <button onClick={() => setOpenModal(true)}>OpenModal</button>
 
       <Modal open={openModal} onClose={setOpenModal} withDefaultClose={false} wrapperStyle={{backgroundColor: `black`, color: `white`}}>
           <div>
@@ -107,4 +107,4 @@ export function TestModal(){
     </>
   )
 }
-</pre>
+```
